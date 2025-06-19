@@ -1,202 +1,286 @@
-import React from "react";
+import React, { useState } from "react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
-const ContactUs = () => {
+export default function ContactUs() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState("");
+
+  // Replace with your actual Web3Forms access key
+  const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY_HERE";
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async () => {
+    // Basic validation
+    if (
+      !formData.firstName ||
+      !formData.lastName ||
+      !formData.phone ||
+      !formData.email ||
+      !formData.subject ||
+      !formData.message
+    ) {
+      setSubmitStatus("Please fill in all required fields.");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus("");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          name: `${formData.firstName} ${formData.lastName}`,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus("success");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          phone: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
-    <>
-      <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Contact Info Section */}
+    <div className="w-full max-w-6xl mx-auto p-4 md:p-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 shadow-2xl rounded-lg overflow-hidden">
+        {/* Left Side - Contact Information */}
+        <div className="bg-[#144923] text-white p-8 md:p-12 flex flex-col justify-center">
           <div className="space-y-8">
-            <div className="space-y-6">
-              <div className="space-y-2">
-                <h3 className="text-lg font-medium text-gray-600">Address</h3>
-                <h2 className="text-2xl font-bold text-gray-900">
+            {/* Address */}
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-green-100">
+                Address
+              </h3>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
+                <p className="text-lg font-medium leading-relaxed">
                   Mbp Mahape Ghansoli
-                </h2>
-              </div>
-
-              <div className="space-y-2">
-                <h3 className="text-lg font-medium text-gray-600">
-                  Get in touch
-                </h3>
-                <p className="text-xl font-semibold text-blue-600">
-                  8450988560 (For Support)
                 </p>
               </div>
+            </div>
 
-              <div className="space-y-2">
-                <h3 className="text-lg font-medium text-gray-600">
-                  Email us at
-                </h3>
-                <p className="text-lg text-blue-600 break-all">
+            {/* Phone */}
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-green-100">
+                Get in touch
+              </h3>
+              <div className="flex items-center gap-3">
+                <Phone className="w-5 h-5 flex-shrink-0" />
+                <p className="text-lg font-medium">8450988560(For Support)</p>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div>
+              <h3 className="text-lg font-semibold mb-2 text-green-100">
+                Email us at
+              </h3>
+              <div className="flex items-center gap-3">
+                <Mail className="w-5 h-5 flex-shrink-0" />
+                <p className="text-lg font-medium break-all">
                   Marketresearchadvisory22@gmail.com
                 </p>
               </div>
             </div>
 
-            {/* Schedule Section */}
-            <div className="bg-gray-50 p-6 rounded-lg space-y-3">
-              <div className="flex justify-between items-center">
-                <span className="font-medium text-gray-900">
+            {/* Business Hours */}
+            <div className="space-y-4">
+              <div>
+                <h3 className="text-lg font-semibold mb-2 text-green-100">
                   Monday to Friday
-                </span>
-                <span className="text-gray-600">09:00 to 06:00 PM</span>
+                </h3>
+                <div className="flex items-center gap-3">
+                  <Clock className="w-5 h-5 flex-shrink-0" />
+                  <p className="text-lg font-medium">09:00 to 06:00 PM</p>
+                </div>
               </div>
-              <div className="flex justify-between items-center">
-                <span className="font-medium text-gray-900">Saturday</span>
-                <span className="text-gray-600">09:30 to 04:00 PM</span>
+
+              <div>
+                <h3 className="text-lg font-semibold mb-2 text-green-100">
+                  Saturday
+                </h3>
+                <div className="flex items-center gap-3">
+                  <Clock className="w-5 h-5 flex-shrink-0" />
+                  <p className="text-lg font-medium">09:30 to 04:00 PM</p>
+                </div>
               </div>
-              <div className="flex justify-between items-center">
-                <span className="font-medium text-red-600">Sunday</span>
-                <span className="text-red-600">Closed</span>
+
+              <div>
+                <h3 className="text-lg font-semibold mb-2 text-green-100">
+                  Sunday
+                </h3>
+                <p className="text-lg font-medium ml-8">Closed</p>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Contact Form Section */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-              Get in touch
-            </h1>
+        {/* Right Side - Contact Form */}
+        <div className="bg-white p-8 md:p-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
+            Get in touch
+          </h2>
 
-            <div id="contactForm" className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label
-                    htmlFor="firstName"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Full Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    placeholder="First Name"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label
-                    htmlFor="lastName"
-                    className="block text-sm font-medium text-gray-700 md:invisible"
-                  >
-                    &nbsp;
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    placeholder="Last Name"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
-                  />
-                </div>
-              </div>
+          {/* Success/Error Messages */}
+          {submitStatus === "success" && (
+            <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-md">
+              Thank you! Your message has been sent successfully.
+            </div>
+          )}
 
-              <div className="space-y-2">
-                <label
-                  htmlFor="phone"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Phone Number <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="Mobile Number"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
-                />
-              </div>
+          {submitStatus === "error" && (
+            <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-md">
+              Sorry, there was an error sending your message. Please try again.
+            </div>
+          )}
 
-              <div className="space-y-2">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Email <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label
-                  htmlFor="subject"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Subject <span className="text-red-500">*</span>
-                </label>
+          <div className="space-y-6">
+            {/* Full Name Row */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Full Name *
+              </label>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"
-                  id="subject"
-                  name="subject"
-                  placeholder="Subject"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  placeholder="First Name"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+                />
+                <input
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  placeholder="Last Name"
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
                 />
               </div>
+            </div>
 
-              <div className="space-y-2">
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Message <span className="text-red-500">*</span>
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Write your message here..."
-                  required
-                  rows="5"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors resize-vertical"
-                ></textarea>
-              </div>
+            {/* Phone Number */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Phone Number *
+              </label>
+              <input
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                placeholder="Mobile Number"
+                required
+                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+              />
+            </div>
 
+            {/* Email */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Email *
+              </label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Email"
+                required
+                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+              />
+            </div>
+
+            {/* Subject */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Subject *
+              </label>
+              <input
+                type="text"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                placeholder="Subject"
+                required
+                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all"
+              />
+            </div>
+
+            {/* Message */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Message *
+              </label>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Write your message here..."
+                required
+                rows={6}
+                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all resize-vertical"
+              />
+            </div>
+
+            {/* Submit Button */}
+            <div>
               <button
-                type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-200 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 outline-none"
+                type="button"
+                onClick={handleSubmit}
+                disabled={isSubmitting}
+                className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 disabled:bg-orange-300 text-white font-semibold px-8 py-3 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
               >
-                Submit
+                {isSubmitting ? "Submitting..." : "Submit"}
               </button>
             </div>
           </div>
         </div>
-
-        {/* Social Icons */}
-        <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
-          <a
-            href="https://wa.me/918450988560"
-            className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-colors duration-200 flex items-center justify-center"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span role="img" aria-label="WhatsApp" className="text-xl">
-              💬
-            </span>
-          </a>
-          <a
-            href="tel:+918450988560"
-            className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg transition-colors duration-200 flex items-center justify-center"
-          >
-            <span role="img" aria-label="Phone" className="text-xl">
-              📞
-            </span>
-          </a>
-        </div>
       </div>
-    </>
+    </div>
   );
-};
-
-export default ContactUs;
+}

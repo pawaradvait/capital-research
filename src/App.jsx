@@ -4,6 +4,7 @@ import Body from './components/Body'
 import All from './components/All'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ContactUs from './components/ContactUs';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Body />} />
+          <Route path="/contactus" element={<ContactUs />} />
           <Route path="*" element={<All />} />
         </Routes>
       </Router>

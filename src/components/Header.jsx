@@ -1,63 +1,90 @@
-import React from 'react'
+import React from "react";
+import { Phone, Clock, MapPin } from "lucide-react";
+import img from "../assets/logo-removebg-preview.png";
 
-const Header = () => {
+export default function Header() {
   return (
-    <>
-    <div className="top-bar">
-      <div className="container">
-        <div className="top-bar-item">
-          <span className="icon">📍</span>
-          <span className="text">Manage, Navi Mumbai</span>
+    <div className="w-full">
+      {/* Top contact bar */}
+      <div className="bg-green-700 text-white py-2 px-4">
+        {/* Changed 'justify-between' to 'justify-end' */}
+        {/* Consolidated all individual items into direct children of this flex container */}
+        <div className="max-w-7xl mx-auto flex justify-end items-center text-sm gap-6">
+          {" "}
+          {/* Added gap-6 here */}
+          {/* Mulund, New Mumbai */}
+          <div className="flex items-center gap-2">
+            <MapPin className="w-4 h-4" />
+            <span>Mulund, New Mumbai</span>
+          </div>
+          {/* Free Consultation */}
+          <div className="flex items-center gap-2">
+            <Phone className="w-4 h-4" />
+            <span>Free Consultation</span>
+          </div>
+          {/* Mon-Sat: 9:00 AM to 06:00 PM */}
+          <div className="flex items-center gap-2">
+            <Clock className="w-4 h-4" />
+            <span>Mon-Sat: 9:00 AM to 06:00 PM</span>
+          </div>
         </div>
+      </div>
 
-        <div className="top-bar-item">
-          <span className="icon">📞</span>
-          <span className="text">Free Consultation</span>
-        </div>
+      {/* Main header */}
+      <div className="bg-white shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <div className="flex flex-col items-center">
+              <img src={img} className="w-32  mr-2" />
+              <div className="max-w-7xl mx-auto px-4">
+                <p className="text-center text-green-700 font-semibold">
+                  For Support: +91 8450988560
+                </p>
+              </div>
+            </div>
 
-        <div className="top-bar-item">
-          <span className="icon">🕒</span>
-          <span className="text">Mon to Fri: 9:00 AM to 06:00 PM</span>
+            {/* Navigation */}
+            <nav className="hidden md:flex items-center space-x-8">
+              <a
+                href="#"
+                className="text-gray-700 hover:text-green-700 font-medium"
+              >
+                Home
+              </a>
+              <a
+                href="#"
+                className="text-gray-700 hover:text-green-700 font-medium"
+              >
+                About Us
+              </a>
+              <a
+                href="#"
+                className="text-gray-700 hover:text-green-700 font-medium"
+              >
+                Packages
+              </a>
+              <a
+                href="#"
+                className="text-gray-700 hover:text-green-700 font-medium"
+              >
+                User Content
+              </a>
+              <a
+                href="#"
+                className="text-gray-700 hover:text-green-700 font-medium"
+              >
+                Contact Us
+              </a>
+            </nav>
+
+            {/* CTA Button */}
+            <button className="bg-green-700 text-white px-6 py-2 rounded-md hover:bg-green-800 transition-colors font-medium">
+              Request a free demo call now!
+            </button>
+          </div>
         </div>
       </div>
     </div>
-
-    <header className="header">
-      <div className="container1">
-        <div className="logo-section">
-          <div className="logo">
-            <div className="lion-icon">🦁</div>
-            <div className="logo-text">
-              <span className="company-name">Market Research</span>
-              <span className="company-subtitle">Advisory</span>
-            </div>
-          </div>
-        </div>
-
-        <nav className="navigation">
-          <ul className="nav-menu">
-            <li><a href="#home" className="nav-link">Home</a></li>
-            <li><a href="#about" className="nav-link">About Us</a></li>
-            <li><a href="#packages" className="nav-link">Packages</a></li>
-            <li><a href="#consent" className="nav-link">User Consent</a></li>
-            <li><a href="#contact" className="nav-link">Contact Us</a></li>
-          </ul>
-        </nav>
-
-        <div className="cta-section">
-          <button className="demo-button">Request a Live demo call now!</button>
-        </div>
-      </div>
-
-      <div className="support-info">
-        <span className="support-text"
-          >For Support: <span className="phone-number">+91 8450998560</span></span
-        >
-      </div>
-    </header>
-
-    </>
-  )
+  );
 }
-
-export default Header

@@ -59,9 +59,6 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-gray-400 mr-3 flex-shrink-0" />
                 <span className="text-gray-300">Free Consultation</span>
               </div>
-              <a href="" className="LeftStickyBtn"
-              ><img src={userConsent} alt="user-consent"
-                /></a>
               <div className="flex items-start">
                 <Clock className="w-5 h-5 text-gray-400 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-gray-300">Mon to Fri: 9:00 AM to 06:00 PM</span>

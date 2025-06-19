@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Facebook, Instagram, Mail, Share2, X } from "lucide-react";
+import WhatsAppButton from "./WhatsAppButton";
+import UserConcentButton from "./UserConcentButton";
 
 export default function Body() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -206,6 +208,6 @@ export default function Body() {
           </div>
         </div>
       )}
-    </>
+      </>
   );
 }

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Phone, Clock, MapPin, Menu, X } from "lucide-react";
 import img from "../assets/logo-removebg-preview.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+  const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -65,30 +67,32 @@ export default function Header() {
                 <a
                   href="#"
                   className="text-gray-700 hover:text-green-700 font-medium transition-colors"
-                >
+                  onClick={()=>{navigate("/")}}
+                  >
                   Home
                 </a>
                 <a
                   href="#"
                   className="text-gray-700 hover:text-green-700 font-medium transition-colors"
-                >
+                  >
                   About Us
                 </a>
                 <a
                   href="#"
                   className="text-gray-700 hover:text-green-700 font-medium transition-colors"
-                >
+                  >
                   Packages
                 </a>
                 <a
                   href="#"
                   className="text-gray-700 hover:text-green-700 font-medium transition-colors"
-                >
+                  >
                   User Content
                 </a>
                 <a
                   href="#"
                   className="text-gray-700 hover:text-green-700 font-medium transition-colors"
+                  onClick={()=>{navigate("/contactus")}}
                 >
                   Contact Us
                 </a>

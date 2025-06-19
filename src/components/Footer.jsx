@@ -2,6 +2,7 @@ import React from 'react';
 import { MapPin, Phone, Clock, ChevronRight } from 'lucide-react';
 import logo from '../assets/logo.svg'
 import userConsent from "../assets/userConsentlogo.svg"
+import BeforeFooter from './BeforeFooter';
 
 const Footer = () => {
   const quickLinks = [
@@ -22,6 +23,8 @@ const Footer = () => {
   ];
 
   return (
+    <>
+    <BeforeFooter/>
     <footer className="bg-[#051309] text-gray-300 py-12 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 place-items-center">
@@ -34,7 +37,7 @@ const Footer = () => {
             <h3 className="text-xl font-semibold text-white mb-6">Quick Links</h3>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
-                <li key={index} className="flex items-center group cursor-pointer">
+                  <li key={index} className="flex items-center group cursor-pointer">
                   <ChevronRight className="w-4 h-4 text-gray-500 mr-2 group-hover:text-white transition-colors" />
                   <a 
                     href="#" 
@@ -80,6 +83,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 

@@ -19,7 +19,7 @@ import { scrollToTop } from '../helper/helper';
 const RefundedPolicy = () => {
     useEffect(()=>{
         scrollToTop()
-    })
+    },[])
   return (
     <>
     <BgHeadingImg heading="Refunded Policy"/>

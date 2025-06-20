@@ -13,7 +13,7 @@ const Footer = () => {
     {name:'Packages', url:'/package'},
     {name:'Refund Policy', url:'/refunded-policy'},
     {name:'Privacy Policy', url:'/privacy-policy'},
-    {name:'Legal Disclaimer', url:''},
+    {name:'Legal Disclaimer', url:'/legal-disclaimer'},
     {name:'User Consent', url:'/userconsent'},
     {name:'Registered Research Analyst', url:''},
     {name:'Contact Us', url:''},

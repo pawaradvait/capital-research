@@ -8,7 +8,7 @@ import { scrollToTop } from "../helper/helper";
 const PackageBody = () => {
   useEffect(()=>{
     scrollToTop()
-})
+},[])
   return (
     <div>
       <BgHeadingImg heading="Package"/>

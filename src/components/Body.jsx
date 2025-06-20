@@ -7,7 +7,7 @@ import { scrollToTop } from "../helper/helper";
 const Body = () => {
   useEffect(()=>{
     scrollToTop()
-})
+},[])
   return (
     <div>
       <BgHeadingImg heading="Home" />

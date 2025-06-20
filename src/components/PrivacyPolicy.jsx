@@ -6,7 +6,7 @@ import BgHeadingImg from './BgHeadingImg';
 const PrivacyPolicy = () => {
     useEffect(()=>{
         scrollToTop()
-    })
+    },[])
   return (
     <>
     <BgHeadingImg heading="Privacy Policy"/>

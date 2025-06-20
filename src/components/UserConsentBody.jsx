@@ -8,7 +8,7 @@ import { scrollToTop } from "../helper/helper";
 const UserConsentBody = () => {
   useEffect(()=>{
     scrollToTop()
-})
+},[])
   return (
     <div>
       <BgHeadingImg heading={"User Consent"} />

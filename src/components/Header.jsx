@@ -52,8 +52,7 @@ export default function Header() {
 
               <div className="text-center">
                 <h5
-                  className="textTypeAnimation"
-                  style={{ cursor: "pointer" }}
+                  className="textTypeAnimation cursor-pointer"
                   onClick="window.location.href='tel:8450988560';"
                   data-text="For&nbsp;Support&nbsp;:&nbsp;+91&nbsp;8450988560"
                 >

@@ -6,7 +6,7 @@ import { scrollToTop } from "../helper/helper";
 export default function ContactUs() {
   useEffect(()=>{
     scrollToTop()
-})
+},[])
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",

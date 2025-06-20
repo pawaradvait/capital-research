@@ -11,11 +11,15 @@
 
 
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MessageCircle } from 'lucide-react';
 import BgHeadingImg from './BgHeadingImg';
+import { scrollToTop } from '../helper/helper';
 
 const RefundedPolicy = () => {
+    useEffect(()=>{
+        scrollToTop()
+    })
   return (
     <>
     <BgHeadingImg heading="Refunded Policy"/>

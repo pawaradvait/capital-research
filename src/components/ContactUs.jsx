@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import BgHeadingImg from "./BgHeadingImg";
+import { scrollToTop } from "../helper/helper";
 
 export default function ContactUs() {
+  useEffect(()=>{
+    scrollToTop()
+})
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",

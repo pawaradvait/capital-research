@@ -9,6 +9,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import PackageBody from "./components/PackageBody";
 import UserConsentBody from "./components/UserConsentBody";
 import RefundedPolicy from "./components/RefundedPolicy";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       </Routes>
       <UserConcentButton />
       <WhatsAppButton />
+      <ScrollTop/>
       <Footer />
     </>
   );

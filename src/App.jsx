@@ -7,6 +7,7 @@ import ContactUs from "./components/ContactUs";
 import UserConcentButton from "./components/UserConcentButton";
 import WhatsAppButton from "./components/WhatsAppButton";
 import PackageBody from "./components/PackageBody";
+import UserConsentBody from "./components/UserConsentBody";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/" element={<Body />} />
         <Route path="/package" element={<PackageBody />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/userconsent" element={<UserConsentBody />} />
+
         <Route path="*" element={<All />} />
       </Routes>
       <UserConcentButton />

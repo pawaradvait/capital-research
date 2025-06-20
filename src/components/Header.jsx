@@ -51,10 +51,12 @@ export default function Header() {
               <img src={img} alt="Logo" className="w-28" />
 
               <div className="text-center">
-                <h5 className="textTypeAnimation"
-                style={{cursor: 'pointer'}}
-                onclick="window.location.href='tel:8450988560';"
-                data-text="For&nbsp;Support&nbsp;:&nbsp;+91&nbsp;8450988560">
+                <h5
+                  className="textTypeAnimation"
+                  style={{ cursor: "pointer" }}
+                  onClick="window.location.href='tel:8450988560';"
+                  data-text="For&nbsp;Support&nbsp;:&nbsp;+91&nbsp;8450988560"
+                >
                   For Support : +91 8450988560
                 </h5>
               </div>
@@ -94,8 +96,11 @@ export default function Header() {
                 <a
                   href="#"
                   className="text-gray-700 hover:text-green-700 font-medium transition-colors"
+                  onClick={() => {
+                    navigate("/userconsent");
+                  }}
                 >
-                  User Content
+                  User Consent
                 </a>
                 <a
                   href="#"

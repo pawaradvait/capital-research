@@ -11,6 +11,8 @@ import UserConsentBody from "./components/UserConsentBody";
 import RefundedPolicy from "./components/RefundedPolicy";
 import ScrollTop from "./components/ScrollTop";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import LeagalDisclaimar from "./components/LeagalDisclaimar";
+import AboutUsBody from "./components/AboutusBody";
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
         <Route path="/userconsent" element={<UserConsentBody />} />
         <Route path="/refunded-policy" element={<RefundedPolicy />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/legal-disclaimer" element={<LeagalDisclaimar />} />
 
         <Route path="*" element={<All />} />
       </Routes>

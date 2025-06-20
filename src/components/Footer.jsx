@@ -3,23 +3,25 @@ import { MapPin, Phone, Clock, ChevronRight } from 'lucide-react';
 import logo from '../assets/logo.svg'
 import userConsent from "../assets/userConsentlogo.svg"
 import BeforeFooter from './BeforeFooter';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
   const quickLinks = [
-    'Home',
-    'About Us',
-    'Packages',
-    'Refund Policy',
-    'Privacy Policy',
-    'Legal Disclaimer',
-    'User Consent',
-    'Registered Research Analyst',
-    'Contact Us',
-    'Investor Charter',
-    'Do\'s & Don\'ts',
-    'Advertisement Disclaimer',
-    'Grievance Redressal Process',
-    'Terms & Conditions'
+    {name:'Home', url:'/'},
+    {name:'About Us', url:''},
+    {name:'Packages', url:'/package'},
+    {name:'Refund Policy', url:'/refunded-policy'},
+    {name:'Privacy Policy', url:''},
+    {name:'Legal Disclaimer', url:''},
+    {name:'User Consent', url:'/userconsent'},
+    {name:'Registered Research Analyst', url:''},
+    {name:'Contact Us', url:''},
+    {name:'Investor Charter', url:''},
+    {name:'Do\'s & Don\'ts', url:''},
+    {name:'Advertisement Disclaimer', url:''},
+    {name:'Grievance Redressal Process', url:''},
+    {name:'Terms & Conditions', url:''}
   ];
 
   return (
@@ -40,10 +42,10 @@ const Footer = () => {
                   <li key={index} className="flex items-center group cursor-pointer">
                   <ChevronRight className="w-4 h-4 text-gray-500 mr-2 group-hover:text-white transition-colors" />
                   <a 
-                    href="#" 
+                    onClick={()=>{navigate(link.url)}} 
                     className="text-gray-300 hover:text-white transition-colors duration-200"
                   >
-                    {link}
+                    {link.name}
                   </a>
                 </li>
               ))}

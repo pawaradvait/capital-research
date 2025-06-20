@@ -8,6 +8,7 @@ import UserConcentButton from "./components/UserConcentButton";
 import WhatsAppButton from "./components/WhatsAppButton";
 import PackageBody from "./components/PackageBody";
 import UserConsentBody from "./components/UserConsentBody";
+import RefundedPolicy from "./components/RefundedPolicy";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/package" element={<PackageBody />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/userconsent" element={<UserConsentBody />} />
+        <Route path="/refunded-policy" element={<RefundedPolicy />} />
 
         <Route path="*" element={<All />} />
       </Routes>

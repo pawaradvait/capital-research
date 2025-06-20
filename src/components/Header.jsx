@@ -70,32 +70,39 @@ export default function Header() {
                 <a
                   href="#"
                   className="text-gray-700 hover:text-green-700 font-medium transition-colors"
-                  onClick={()=>{navigate("/")}}
-                  >
+                  onClick={() => {
+                    navigate("/");
+                  }}
+                >
                   Home
                 </a>
                 <a
                   href="#"
                   className="text-gray-700 hover:text-green-700 font-medium transition-colors"
-                  >
+                >
                   About Us
                 </a>
                 <a
                   href="#"
                   className="text-gray-700 hover:text-green-700 font-medium transition-colors"
-                  >
+                  onClick={() => {
+                    navigate("/package");
+                  }}
+                >
                   Packages
                 </a>
                 <a
                   href="#"
                   className="text-gray-700 hover:text-green-700 font-medium transition-colors"
-                  >
+                >
                   User Content
                 </a>
                 <a
                   href="#"
                   className="text-gray-700 hover:text-green-700 font-medium transition-colors"
-                  onClick={()=>{navigate("/contactus")}}
+                  onClick={() => {
+                    navigate("/contactus");
+                  }}
                 >
                   Contact Us
                 </a>

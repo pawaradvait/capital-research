@@ -11,6 +11,7 @@ import UserConsentBody from "./components/UserConsentBody";
 import RefundedPolicy from "./components/RefundedPolicy";
 import ScrollTop from "./components/ScrollTop";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import AboutUsBody from "./components/AboutusBody";
 
 function App() {
   return (
@@ -19,16 +20,16 @@ function App() {
       <Routes>
         <Route path="/" element={<Body />} />
         <Route path="/package" element={<PackageBody />} />
-        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/contactus" element={<ContactUs />} />\
+        <Route path="/aboutus" element={<AboutUsBody />} />
         <Route path="/userconsent" element={<UserConsentBody />} />
         <Route path="/refunded-policy" element={<RefundedPolicy />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-
         <Route path="*" element={<All />} />
       </Routes>
       <UserConcentButton />
       <WhatsAppButton />
-      <ScrollTop/>
+      <ScrollTop />
       <Footer />
     </>
   );

@@ -12,7 +12,7 @@
 
 
 import React, { useEffect } from 'react';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, Shield } from 'lucide-react';
 import BgHeadingImg from './BgHeadingImg';
 import { scrollToTop } from '../helper/helper';
 
@@ -23,14 +23,18 @@ const RefundedPolicy = () => {
   return (
     <>
     <BgHeadingImg heading="Refunded Policy"/>
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Market Research Advisory
-          </h1>
-          <p className="text-lg text-gray-600">Refunded Policy</p>
+          <div className="flex items-center justify-center mb-4">
+            <Shield className="w-12 h-12 text-blue-600 mr-3" />
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">
+              Refunded Policy
+            </h1>
+          </div>
+          <p className="text-lg text-gray-600">Market Research Advisory</p>
+          <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
         </div>
 
         {/* Main Content Card */}

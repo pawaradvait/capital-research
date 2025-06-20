@@ -51,9 +51,12 @@ export default function Header() {
               <img src={img} alt="Logo" className="w-28" />
 
               <div className="text-center">
-                <p className="text-green-700 font-semibold text-xs md:text-sm">
-                  For Support: +91 8450988560
-                </p>
+                <h5 className="textTypeAnimation"
+                style={{cursor: 'pointer'}}
+                onclick="window.location.href='tel:8450988560';"
+                data-text="For&nbsp;Support&nbsp;:&nbsp;+91&nbsp;8450988560">
+                  For Support : +91 8450988560
+                </h5>
               </div>
             </div>
 

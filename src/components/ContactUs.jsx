@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import BgHeadingImg from "./BgHeadingImg";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -82,6 +83,8 @@ export default function ContactUs() {
   };
 
   return (
+    <>
+    <BgHeadingImg heading="Contact Us"/>
     <div className="w-full max-w-6xl mx-auto p-4 md:p-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 shadow-2xl rounded-lg overflow-hidden">
         {/* Left Side - Contact Information */}
@@ -282,5 +285,6 @@ export default function ContactUs() {
         </div>
       </div>
     </div>
+    </>
   );
 }

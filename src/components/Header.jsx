@@ -81,6 +81,9 @@ export default function Header() {
                 <a
                   href="#"
                   className="text-gray-700 hover:text-green-700 font-medium transition-colors"
+                  onClick={() => {
+                    navigate("/aboutus");
+                  }}
                 >
                   About Us
                 </a>

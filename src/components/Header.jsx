@@ -33,10 +33,10 @@ export default function Header() {
           </div>
 
           {/* Mobile contact info - simplified */}
-          <div className="md:hidden flex justify-center items-center text-xs">
+          <div className="md:hidden flex justify-center items-center text-sm font-medium">
             <div className="flex items-center gap-2">
-              <Phone className="w-3 h-3" />
-              <span>Free Consultation</span>
+              <Phone className="w-4 h-4" />
+              <span>Free Consultation: +91 8450988560</span>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ export default function Header() {
 
               <div className="text-center">
                 <h5
-                  className="textTypeAnimation cursor-pointer"
+                  className="textTypeAnimation cursor-pointer text-sm md:text-base"
                   onClick="window.location.href='tel:8450988560';"
                   data-text="For&nbsp;Support&nbsp;:&nbsp;+91&nbsp;8450988560"
                 >

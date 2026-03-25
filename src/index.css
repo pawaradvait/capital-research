@@ -23,9 +23,15 @@ body {
   -webkit-text-stroke: green;
   /* -webkit-text-stroke-width: 2px; */
   /* color: rgb(255, 145, 0); */
-  font-size: 1.3vw;
+  font-size: 16px;
   font-weight: bolder;
   margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .textTypeAnimation {
+    font-size: 18px;
+  }
 }
 
 .textTypeAnimation::before {

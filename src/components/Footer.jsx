@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Clock, ChevronRight } from 'lucide-react';
-import logo from '../assets/logo.svg'
+import logo from '../assets/capitalresearch.png'
 import userConsent from "../assets/userConsentlogo.svg"
 import BeforeFooter from './BeforeFooter';
 import { useNavigate } from 'react-router-dom';
@@ -31,7 +31,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 place-items-center">
             <div>
-                <img src={logo} className='w-80' alt="MarketReasearchAdvisory" />
+                <img
+                  src={logo}
+                  className='w-96 md:w-[28rem]'
+                  style={{ filter: 'brightness(0) invert(1)' }}
+                  alt="Capital Research"
+                />
             </div>
 
           {/* Quick Links Section */}
@@ -76,7 +81,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              Copyright © 2025 Market Research Advisory
+              Copyright © 2025 Capital Research
             </p>
             <p className="text-gray-400 text-sm">
               Powered by <span className="text-green-400">Koloursyncc</span>

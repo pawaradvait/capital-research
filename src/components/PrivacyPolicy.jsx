@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </h1>
           </div>
-          <p className="text-lg text-gray-600">Market Research Advisory</p>
+          <p className="text-lg text-gray-600">Capital Research</p>
           <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
         </div>
 
@@ -35,7 +35,7 @@ const PrivacyPolicy = () => {
                 <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Our Commitment to Privacy</h2>
               </div>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Market Research Advisory values and respect every individual's right to Privacy Policy. We are admitted by relationship as well as by becoming our customers we give promise to you that we shall always be loyal to our clients as well as non-clients and their information provided to use by them.
+                Capital Research values and respect every individual's right to Privacy Policy. We are admitted by relationship as well as by becoming our customers we give promise to you that we shall always be loyal to our clients as well as non-clients and their information provided to use by them.
               </p>
             </div>
 
@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
             <div className="mb-8">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Policy Application</h3>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                This Privacy Policy of the Market Research Advisory is applicable to both current as well as former clients. Below are detailed testimonials of our Policy:
+                This Privacy Policy of Capital Research is applicable to both current as well as former clients. Below are detailed testimonials of our Policy:
               </p>
             </div>
 
@@ -57,7 +57,7 @@ const PrivacyPolicy = () => {
                 The information provided by you will only be used for offering you the services that you have subscribed for with our company and for which you have provided us the information. The information provided by you will act as your identity with us. If you make any sort of changes in any field of information that you have provided to us then make sure to inform us regarding that through a call or mail.
               </p>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Other than providing service to you based on the information provided by you, we can also use that information for sending you emails, newsletters, contest information, survey, or information related to any kind of new services of our company that will be for your benefit and while subscribing for our services you also agree with this right of Market Research Advisory.
+                Other than providing service to you based on the information provided by you, we can also use that information for sending you emails, newsletters, contest information, survey, or information related to any kind of new services of our company that will be for your benefit and while subscribing for our services you also agree with this right of Capital Research.
               </p>
             </div>
 
@@ -81,7 +81,7 @@ const PrivacyPolicy = () => {
             <div className="mb-8">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Your Rights</h3>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                <span className="font-semibold">Market Research Advisory</span> respects and values the Right to privacy of each and every individual. We are esteemed by the relationship and by becoming our clients you have a promise to our clients and we shall remain loyal to all our clients and non-clients whose information resides with us. This Privacy Policy of <span className="font-semibold">Market Research Advisory</span> is to the current clients as well as former clients. Below are the word-by-word credentials of our Privacy Policy:
+                <span className="font-semibold">Capital Research</span> respects and values the Right to privacy of each and every individual. We are esteemed by the relationship and by becoming our clients you have a promise to our clients and we shall remain loyal to all our clients and non-clients whose information resides with us. This Privacy Policy of <span className="font-semibold">Capital Research</span> is to the current clients as well as former clients. Below are the word-by-word credentials of our Privacy Policy:
               </p>
             </div>
 
@@ -92,7 +92,7 @@ const PrivacyPolicy = () => {
                 <h3 className="text-lg font-semibold text-gray-900">Mobile Registration</h3>
               </div>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                By registering your mobile number on <span className="font-semibold">Market Research Advisory</span> you agree to be contacted by our personnel or to receive SMS and it shall be treated as 'opt Inn' in case the contact number you have registered with us is subscribed in the DND registry (Do Not Disturb). By registering for our services, you also agree to comply with our Private Policy and Terms & Conditions.
+                By registering your mobile number on <span className="font-semibold">Capital Research</span> you agree to be contacted by our personnel or to receive SMS and it shall be treated as 'opt Inn' in case the contact number you have registered with us is subscribed in the DND registry (Do Not Disturb). By registering for our services, you also agree to comply with our Private Policy and Terms & Conditions.
               </p>
             </div>
 
@@ -136,7 +136,7 @@ const PrivacyPolicy = () => {
                   Your information given to us represents your identity with us. If any changes are brought in any of the fields in which you have provided us the information, you shall bring it to our notice by either calling us or dropping a mail to us.
                 </p>
                 <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                  In addition to the service provided to you your information (Mobile Number, E-Mail ID, etc.) can be brought into use for sending you newsletters, surveys, contest information, or information about any new services of the Company which will be for your own good and while subscribing for our services you agree that <span className="font-semibold">Market Research Advisory</span> has the right to do so.
+                  In addition to the service provided to you your information (Mobile Number, E-Mail ID, etc.) can be brought into use for sending you newsletters, surveys, contest information, or information about any new services of the Company which will be for your own good and while subscribing for our services you agree that <span className="font-semibold">Capital Research</span> has the right to do so.
                 </p>
               </div>
             </div>
@@ -162,7 +162,7 @@ const PrivacyPolicy = () => {
               If you have any questions or concerns about our privacy practices, please contact us.
             </p>
             <a 
-              href="https://marketresearchadvisory.com/" 
+              href="https://capitalresearch.com/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors duration-200 text-sm sm:text-base"
@@ -174,7 +174,7 @@ const PrivacyPolicy = () => {
 
         {/* Footer */}
         <div className="mt-8 text-center text-gray-500 text-sm">
-          <p>&copy; 2025 Market Research Advisory. All rights reserved.</p>
+          <p>&copy; 2025 Capital Research. All rights reserved.</p>
           <p className="mt-2">Last updated: June 2025</p>
         </div>
       </div>

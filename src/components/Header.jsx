@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Phone, Clock, MapPin, Menu, X } from "lucide-react";
-import img from "../assets/logo-removebg-preview.png";
+import img from "../assets/capitalresearch.png";
 import { useNavigate } from "react-router-dom";
 
 export default function Header() {
@@ -48,7 +48,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex flex-col items-center">
-              <img src={img} alt="Logo" className="w-28" />
+              <img src={img} alt="Logo" className="w-40 md:w-48" />
 
               <div className="text-center">
                 <h5

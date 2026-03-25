@@ -20,7 +20,7 @@ const LeagalDisclaimar = () => {
               Disclaimer
             </h1>
           </div>
-          <p className="text-lg text-gray-600">Market Research Advisory</p>
+          <p className="text-lg text-gray-600">Capital Research</p>
           <div className="w-24 h-1 bg-red-600 mx-auto mt-4 rounded-full"></div>
         </div>
 
@@ -35,7 +35,7 @@ const LeagalDisclaimar = () => {
                 <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Information Responsibility</h2>
               </div>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Market Research Advisory is not responsible for the information and conclusions of the analysis available on it. Although all the information on the Web site is presented with utmost care, we do not hold any responsibility for the information provided. Customers and visitors should not depend on analysis for making an investment; the analysis should be considered as a first step to further their awareness of the subject. They must consult a financial advisor. None of our expert analyst should be relied upon as Financial advisor. Visitors to Web site must go through Terms and Conditions and Disclaimer before making any serious investment-related decisions. Market Research Advisory is not responsible for the errors and omissions on the page. We do not endorse opinions of experts which may be their own personal views. Web site and management is not to be considered responsible for content of the Web site.
+                Capital Research is not responsible for the information and conclusions of the analysis available on it. Although all the information on the Web site is presented with utmost care, we do not hold any responsibility for the information provided. Customers and visitors should not depend on analysis for making an investment; the analysis should be considered as a first step to further their awareness of the subject. They must consult a financial advisor. None of our expert analyst should be relied upon as Financial advisor. Visitors to Web site must go through Terms and Conditions and Disclaimer before making any serious investment-related decisions. Capital Research is not responsible for the errors and omissions on the page. We do not endorse opinions of experts which may be their own personal views. Web site and management is not to be considered responsible for content of the Web site.
               </p>
             </div>
 
@@ -46,7 +46,7 @@ const LeagalDisclaimar = () => {
                 <h3 className="text-lg font-semibold text-gray-900">Terms of Use Agreement</h3>
               </div>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                You agree and understand that use of Market Research Advisory is at your risk. Market Research Advisory is not liable to any direct, indirect, incidental, consequential, or exemplary damages. Failures in the hardware, software, and internet connection can delay the delivery of SMS which is not the responsibility of Market Research Advisory. SMS of Market Research Advisory is not supposed to be forwarded directly to any individual or firm to send suggestions. This can invite serious legal actions. Any dispute will be solved in the territory of India only at Thane, Navi Mumbai. Market Research Advisory reserves the right to modify Terms and Conditions and Privacy Policy. All the information, analysis, reports, and articles on the Web site are only to inform the customer and should be used at owns risk.
+                You agree and understand that use of Capital Research is at your risk. Capital Research is not liable to any direct, indirect, incidental, consequential, or exemplary damages. Failures in the hardware, software, and internet connection can delay the delivery of SMS which is not the responsibility of Capital Research. SMS of Capital Research is not supposed to be forwarded directly to any individual or firm to send suggestions. This can invite serious legal actions. Any dispute will be solved in the territory of India only at Thane, Navi Mumbai. Capital Research reserves the right to modify Terms and Conditions and Privacy Policy. All the information, analysis, reports, and articles on the Web site are only to inform the customer and should be used at owns risk.
               </p>
             </div>
 
@@ -57,7 +57,7 @@ const LeagalDisclaimar = () => {
                 <h3 className="text-lg font-semibold text-gray-900">Virtual Chat Room Service</h3>
               </div>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Market Research Advisory provides a virtual chat room for the conversation. However, the visitor is solely responsible for his decisions in case of loss or benefit. We reserve the right to deny the chat room service without giving an explanation. Any opinion, comment, experience, advice, and offer available on the site is just a piece of information nothing else. We presume that all the visitors to the site have thoroughly gone through the disclaimer and terms and conditions.
+                Capital Research provides a virtual chat room for the conversation. However, the visitor is solely responsible for his decisions in case of loss or benefit. We reserve the right to deny the chat room service without giving an explanation. Any opinion, comment, experience, advice, and offer available on the site is just a piece of information nothing else. We presume that all the visitors to the site have thoroughly gone through the disclaimer and terms and conditions.
               </p>
             </div>
 
@@ -66,7 +66,7 @@ const LeagalDisclaimar = () => {
               <h3 className="text-lg font-semibold text-gray-900 mb-3 uppercase tracking-wide">Standard Disclosure/Disclaimer</h3>
               <div className="space-y-4">
                 <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                  Market Research Advisory does not receive any consideration by way of remuneration or compensation or in any other form whatsoever, by us or any of our associates or subsidiaries for any distribution or execution services in respect of the products or securities for which the research service is provided to the client. Market Research Advisory does not provide any order execution services to any user/subscriber. If any person offers an order execution service in the name of Market Research Advisory, the user should immediately deny such services and report to us about the same. If the user/subscriber accepts such services, then Market Research Advisory or its promoter's, employees, representatives, and/or stakeholders are not responsible for any losses/gains or any outcome that may arise due to any such activities. The user/subscriber agrees to indemnify Market Research Advisory or its promoter's, employees, representatives, and/or stakeholders from any losses or damages that the user may incur from any such execution services activities agreed upon by the user on his/her/their own accord. The user agrees that he/she/they have used services offered by Market Research Advisory or any of its subsidiaries only after having read and accepted the terms and conditions of services provided by us.
+                  Capital Research does not receive any consideration by way of remuneration or compensation or in any other form whatsoever, by us or any of our associates or subsidiaries for any distribution or execution services in respect of the products or securities for which the research service is provided to the client. Capital Research does not provide any order execution services to any user/subscriber. If any person offers an order execution service in the name of Capital Research, the user should immediately deny such services and report to us about the same. If the user/subscriber accepts such services, then Capital Research or its promoter's, employees, representatives, and/or stakeholders are not responsible for any losses/gains or any outcome that may arise due to any such activities. The user/subscriber agrees to indemnify Capital Research or its promoter's, employees, representatives, and/or stakeholders from any losses or damages that the user may incur from any such execution services activities agreed upon by the user on his/her/their own accord. The user agrees that he/she/they have used services offered by Capital Research or any of its subsidiaries only after having read and accepted the terms and conditions of services provided by us.
                 </p>
               </div>
             </div>
@@ -78,7 +78,7 @@ const LeagalDisclaimar = () => {
                 <h3 className="text-lg font-semibold text-gray-900">Stock/Commodity Broker Recommendations</h3>
               </div>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Market Research Advisory does not recommend a stock/commodity broker. If any stock/commodity broker is recommended by any of our representatives, we do not receive any consideration by way of remuneration or compensation or in any other form whatsoever from the stock/commodity broker or any other intermediary so recommended to the client.
+                Capital Research does not recommend a stock/commodity broker. If any stock/commodity broker is recommended by any of our representatives, we do not receive any consideration by way of remuneration or compensation or in any other form whatsoever from the stock/commodity broker or any other intermediary so recommended to the client.
               </p>
             </div>
 
@@ -129,7 +129,7 @@ const LeagalDisclaimar = () => {
             <div className="mb-8">
               <h3 className="text-lg font-semibold text-gray-900 mb-3 italic">Standard Disclaimer:</h3>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Market Research Advisory is an independent SEBI (Securities and Exchange Board of India) registered equity research providing firm operating under the license of it's proprietor. Market Research Advisory or its promoter, employees, directors & stakeholders may have had or may have in future positions in the stocks/instruments covered under research or may be providing or may provide investment banking or other advisory services to the companies covered under research. Clients are advised to make their independent judgment for investment decisions and are advised to consult their advisors for any queries. We are not responsible for any of the investment decisions made by the clients and any of the profit or loss incurred thereof. This document is distributed to you solely for information and is not to be used or considered as an offer or invitation to sell or the solicitation of an offer or invitation to purchase or subscribe for any securities. Investment in the capital market is subject to market risks. You are expected to make your own investment decisions without relying on our research. We do not assure or guarantee the performance of the securities. All information provided herein is on an "as is" basis and we do not guarantee the accuracy or completeness of the information.
+                Capital Research is an independent SEBI (Securities and Exchange Board of India) registered equity research providing firm operating under the license of it's proprietor. Capital Research or its promoter, employees, directors & stakeholders may have had or may have in future positions in the stocks/instruments covered under research or may be providing or may provide investment banking or other advisory services to the companies covered under research. Clients are advised to make their independent judgment for investment decisions and are advised to consult their advisors for any queries. We are not responsible for any of the investment decisions made by the clients and any of the profit or loss incurred thereof. This document is distributed to you solely for information and is not to be used or considered as an offer or invitation to sell or the solicitation of an offer or invitation to purchase or subscribe for any securities. Investment in the capital market is subject to market risks. You are expected to make your own investment decisions without relying on our research. We do not assure or guarantee the performance of the securities. All information provided herein is on an "as is" basis and we do not guarantee the accuracy or completeness of the information.
               </p>
             </div>
 
@@ -138,12 +138,12 @@ const LeagalDisclaimar = () => {
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                 For more information and updates, please visit our website at{' '}
                 <a 
-                  href="https://marketresearchadvisory.com/" 
+                  href="https://capitalresearch.com/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="font-semibold text-blue-600 hover:text-blue-800 underline"
                 >
-                  https://marketresearchadvisory.com/
+                  https://capitalresearch.com/
                 </a>
               </p>
             </div>
@@ -161,19 +161,19 @@ const LeagalDisclaimar = () => {
               Please read all terms and conditions carefully before using our services.
             </p>
             <a 
-              href="https://marketresearchadvisory.com/" 
+              href="https://capitalresearch.com/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-lg transition-colors duration-200 text-sm sm:text-base"
             >
-              Visit Market Research Advisory
+              Visit Capital Research
             </a>
           </div>
         </div>
 
         {/* Footer */}
         <div className="mt-8 text-center text-gray-500 text-sm">
-          <p>&copy; 2025 Market Research Advisory. All rights reserved.</p>
+          <p>&copy; 2025 Capital Research. All rights reserved.</p>
           <p className="mt-2">Last updated: June 2025</p>
         </div>
       </div>

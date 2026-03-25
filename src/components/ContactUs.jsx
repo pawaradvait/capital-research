@@ -126,7 +126,7 @@ export default function ContactUs() {
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 flex-shrink-0" />
                 <p className="text-lg font-medium break-all">
-                  Marketresearchadvisory22@gmail.com
+                  capitalresearch22@gmail.com
                 </p>
               </div>
             </div>

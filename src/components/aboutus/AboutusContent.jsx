@@ -5,7 +5,7 @@ export default function AboutusContent() {
     "Are you overlooking the benefits of professional research services",
     "Fed up with reaching empty promises",
     "Searching for a trustworthy and user-friendly platform for trading in the Indian stock market",
-    "Consider opting for Market Research Advisory plans as your primary choice",
+    "Consider opting for Capital Research plans as your primary choice",
   ];
 
   return (
@@ -13,7 +13,7 @@ export default function AboutusContent() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-            Trade with Market Research Advisory
+            Trade with Capital Research
             <span className="block text-blue-600 mt-2">
               Like a Professional
             </span>

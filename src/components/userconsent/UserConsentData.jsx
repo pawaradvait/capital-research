@@ -29,7 +29,7 @@ const UserConsentData = () => {
           <div className="flex items-center gap-4 mb-6">
             <TrendingUp className="w-12 h-12 text-blue-300" />
             <div>
-              <h1 className="text-4xl font-bold">Market Research Advisory</h1>
+              <h1 className="text-4xl font-bold">Capital Research</h1>
               <p className="text-blue-200 text-lg">
                 Professional Trading Research Services
               </p>
@@ -115,7 +115,7 @@ const UserConsentData = () => {
               <div className="bg-gray-50 rounded-lg p-6 space-y-4 text-gray-700 leading-relaxed">
                 <p>
                   By visiting, using, or accessing our website{" "}
-                  <strong>https://marketresearchadvisory.com/</strong> and
+                  <strong>https://capitalresearch.com/</strong> and
                   making payment for subscription to our research services, you
                   agree to be bound by these terms and conditions, legal
                   disclaimers, disclosures, policies, and user consent.
@@ -184,7 +184,7 @@ const UserConsentData = () => {
               </h3>
               <div className="bg-blue-50 rounded-lg p-6 space-y-4 text-gray-700 leading-relaxed border border-blue-200">
                 <p>
-                  Market Research Advisory provides{" "}
+                  Capital Research provides{" "}
                   <strong>research and analysis services only</strong>. We are
                   not an investment advisory service. Our recommendations are
                   based on technical analysis and market research, representing
@@ -316,8 +316,8 @@ const UserConsentData = () => {
                   <p className="text-red-800 font-medium">
                     <strong>Security Alert:</strong> We will never ask for your
                     Demat/Trading account login credentials. Do not entertain
-                    calls from personal numbers claiming to be Market Research
-                    Advisory asking for personal details or fund transfers.
+                    calls from personal numbers claiming to be Capital
+                    Research asking for personal details or fund transfers.
                   </p>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
@@ -329,7 +329,7 @@ const UserConsentData = () => {
                       <li className="flex items-center gap-2">
                         <Mail className="w-4 h-4 text-blue-500" />
                         <span>
-                          Email: marketresearchadvisory.com domain only
+                          Email: capitalresearch.com domain only
                         </span>
                       </li>
                       <li className="flex items-center gap-2">
@@ -428,16 +428,16 @@ const UserConsentData = () => {
         {/* Footer */}
         <div className="mt-12 text-center text-gray-600">
           <p className="mb-2">
-            <strong>Market Research Advisory</strong> | Professional Trading
+            <strong>Capital Research</strong> | Professional Trading
             Research Services
           </p>
           <p className="text-sm">
             Website:{" "}
             <a
-              href="https://marketresearchadvisory.com/"
+              href="https://capitalresearch.com/"
               className="text-blue-600 hover:underline"
             >
-              https://marketresearchadvisory.com/
+              https://capitalresearch.com/
             </a>{" "}
             | Compliance: 9819596352
           </p>

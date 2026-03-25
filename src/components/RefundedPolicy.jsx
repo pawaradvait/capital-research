@@ -33,7 +33,7 @@ const RefundedPolicy = () => {
               Refunded Policy
             </h1>
           </div>
-          <p className="text-lg text-gray-600">Market Research Advisory</p>
+          <p className="text-lg text-gray-600">Capital Research</p>
           <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
         </div>
 
@@ -43,14 +43,14 @@ const RefundedPolicy = () => {
             {/* Risk and Rewards Disclaimer */}
             <div className="mb-8">
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Market Research Advisory takes all the necessary measures related to risk and rewards involved in markets before delivering any recommendations to clients. Once the client has paid for the services there will be <span className="font-semibold text-red-600">NO REFUNDS, CANCELLATIONS or TRANSFERS</span>. We appeal to our visitors not to offer or allow anyone else even your family members, children, and friend to use any electronic modes of payments or your personal accounts for taking subscription without your prior permission.
+                Capital Research takes all the necessary measures related to risk and rewards involved in markets before delivering any recommendations to clients. Once the client has paid for the services there will be <span className="font-semibold text-red-600">NO REFUNDS, CANCELLATIONS or TRANSFERS</span>. We appeal to our visitors not to offer or allow anyone else even your family members, children, and friend to use any electronic modes of payments or your personal accounts for taking subscription without your prior permission.
               </p>
             </div>
 
             {/* Payment Agreement */}
             <div className="mb-8">
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Once you have made any payment for subscription to our site or in the bank account as mentioned in the payment option. We believe that you have read and agreed to the Refund Policy of Market Research Advisory that <span className="font-semibold text-red-600">NO REFUNDS, CANCELLATIONS, or TRANSFERS</span> are done in any case.
+                Once you have made any payment for subscription to our site or in the bank account as mentioned in the payment option. We believe that you have read and agreed to the Refund Policy of Capital Research that <span className="font-semibold text-red-600">NO REFUNDS, CANCELLATIONS, or TRANSFERS</span> are done in any case.
               </p>
             </div>
 
@@ -64,7 +64,7 @@ const RefundedPolicy = () => {
             {/* Chat Room Service */}
             <div className="mb-8">
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Market Research Advisory provides a virtual chat room for the conversation. However, the visitor is solely responsible for his decisions in case of loss or benefit. We reserve the right to deny the chat room service without giving an explanation. Any opinion, comment, experience, advice, and offer available on the site is just a piece of information nothing else. We presume that all the visitors to the site have thoroughly gone through the disclaimer and terms and conditions.
+                Capital Research provides a virtual chat room for the conversation. However, the visitor is solely responsible for his decisions in case of loss or benefit. We reserve the right to deny the chat room service without giving an explanation. Any opinion, comment, experience, advice, and offer available on the site is just a piece of information nothing else. We presume that all the visitors to the site have thoroughly gone through the disclaimer and terms and conditions.
               </p>
             </div>
 
@@ -122,19 +122,19 @@ const RefundedPolicy = () => {
               For any questions or concerns, please visit our website
             </p>
             <a 
-              href="https://marketresearchadvisory.com/" 
+              href="https://capitalresearch.com/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors duration-200 text-sm sm:text-base"
             >
-              Visit Market Research Advisory
+              Visit Capital Research
             </a>
           </div>
         </div>
 
         {/* Footer */}
         <div className="mt-8 text-center text-gray- 500 text-sm">
-          <p>&copy; 2025 Market Research Advisory. All rights reserved.</p>
+          <p>&copy; 2025 Capital Research. All rights reserved.</p>
         </div>
       </div>
 

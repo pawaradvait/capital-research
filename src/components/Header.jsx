@@ -144,35 +144,55 @@ export default function Header() {
                 <a
                   href="#"
                   className="block text-gray-700 hover:text-green-700 font-medium py-2 transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate("/");
+                    setIsMobileMenuOpen(false);
+                  }}
                 >
                   Home
                 </a>
                 <a
                   href="#"
                   className="block text-gray-700 hover:text-green-700 font-medium py-2 transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate("/aboutus");
+                    setIsMobileMenuOpen(false);
+                  }}
                 >
                   About Us
                 </a>
                 <a
                   href="#"
                   className="block text-gray-700 hover:text-green-700 font-medium py-2 transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate("/package");
+                    setIsMobileMenuOpen(false);
+                  }}
                 >
                   Packages
                 </a>
                 <a
                   href="#"
                   className="block text-gray-700 hover:text-green-700 font-medium py-2 transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate("/userconsent");
+                    setIsMobileMenuOpen(false);
+                  }}
                 >
-                  User Content
+                  User Consent
                 </a>
                 <a
                   href="#"
                   className="block text-gray-700 hover:text-green-700 font-medium py-2 transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate("/contactus");
+                    setIsMobileMenuOpen(false);
+                  }}
                 >
                   Contact Us
                 </a>

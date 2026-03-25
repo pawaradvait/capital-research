@@ -334,7 +334,7 @@ const UserConsentData = () => {
                       </li>
                       <li className="flex items-center gap-2">
                         <Phone className="w-4 h-4 text-green-500" />
-                        <span>Compliance: 9819596352</span>
+                        <span>Compliance: 9833972053</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <TrendingUp className="w-4 h-4 text-purple-500" />
@@ -439,7 +439,7 @@ const UserConsentData = () => {
             >
               https://capitalresearch.com/
             </a>{" "}
-            | Compliance: 9819596352
+            | Compliance: 9833972053
           </p>
         </div>
       </div>

@@ -114,7 +114,7 @@ export default function ContactUs() {
               </h3>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 flex-shrink-0" />
-                <p className="text-lg font-medium">8450988560(For Support)</p>
+                <p className="text-lg font-medium">9833972053(For Support)</p>
               </div>
             </div>
 
